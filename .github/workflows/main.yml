@@ -9,6 +9,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: NPM Install
+        run: |
+          npm install
+
       - name: Hello world action step
         uses: ./ 
         id: hello
